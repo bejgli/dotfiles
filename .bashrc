@@ -29,6 +29,8 @@ unset rc
 . "$HOME/.cargo/env"
 
 # Raspberry Pi Pico
-export PICO_SDK_PATH=/home/lacustl/Pico/pico-sdk
-export PICO_EXTRAS_PATH=/home/lacustl/Pico/pico-extras
+#export PICO_SDK_PATH=/home/lacustl/Pico/pico-sdk
+#export PICO_EXTRAS_PATH=/home/lacustl/Pico/pico-extras
 
+# Elixir iex history
+export ERL_AFLAGS="-kernel shell_history enabled"
