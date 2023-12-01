@@ -1,15 +1,16 @@
 set nu
 set relativenumber
 
+set colorcolumn=80
 set cursorline  
 set scrolloff=8
 set cmdheight=1
 set laststatus=2
-set noshowmode
+set noshowmode "hide insert mode text for lightline
 set autoindent
 set wildmenu
  
-set incsearch
+set incsearch "incremental highlight when typing
 set hlsearch
 
 set signcolumn=yes
@@ -20,6 +21,7 @@ set shiftwidth=4
 set softtabstop=4 
 set expandtab
 
+set termguicolors "catppuccin needs this
 
 call plug#begin()
 
@@ -31,10 +33,12 @@ Plug 'tpope/vim-fugitive'
 
 Plug 'preservim/vim-indent-guides'
 
-Plug 'elixir-editors/vim-elixir'
+"Plug 'elixir-editors/vim-elixir'
 
 "Plug 'morhetz/gruvbox'
 Plug 'junegunn/seoul256.vim'
+Plug 'catppuccin/vim', { 'as': 'catppuccin' }
+
 
 Plug 'itchyny/lightline.vim'
 
@@ -56,9 +60,11 @@ let g:lightline = {
     \ 'component_function': {
     \   'gitbranch': 'FugitiveHead'
     \ },
+    \ 'colorscheme': 'catppuccin_frappe'
     \ }
 
-colorscheme seoul256
+colorscheme catppuccin_frappe
+"colorscheme seoul256
 "colorscheme gruvbox
 "set bg=dark
 
