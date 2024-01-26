@@ -1,0 +1,35 @@
+add_newline = true
+
+[username]
+format = "[$user]($style) "
+disabled = false
+show_always = true
+
+[hostname]
+ssh_only = true
+format = "on [$hostname](bold red) "
+disabled = false
+
+[git_branch]
+symbol = ''
+truncation_length = 25
+truncation_symbol = ''
+
+[git_status]
+ahead = '⇡${count}'
+diverged = '⇕⇡${ahead_count}⇣${behind_count}'
+behind = '⇣${count}'
+staged = '[++\($count\)](green)'
+
+[directory]
+truncation_length = 8
+truncation_symbol = '…/'
+
+[battery]
+full_symbol = '🔋 '
+charging_symbol = '⚡️ '
+discharging_symbol = '💀 '
+
+[[battery.display]]
+threshold = 20
+style = 'bold red'

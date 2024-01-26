@@ -1,6 +1,7 @@
 set nu
 set relativenumber
 
+set nowrap
 set colorcolumn=80
 set cursorline  
 set scrolloff=8
@@ -63,7 +64,7 @@ let g:lightline = {
     \ 'colorscheme': 'catppuccin_frappe'
     \ }
 
-colorscheme catppuccin_frappe
+colorscheme catppuccin_mocha
 "colorscheme seoul256
 "colorscheme gruvbox
 "set bg=dark
