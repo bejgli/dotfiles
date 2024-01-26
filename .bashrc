@@ -35,3 +35,5 @@ unset rc
 # Elixir iex history
 export ERL_AFLAGS="-kernel shell_history enabled"
 export GPG_TTY=$(tty)
+
+eval "$(starship init bash)"
