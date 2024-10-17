@@ -40,6 +40,7 @@ Plug 'morhetz/gruvbox'
 Plug 'junegunn/seoul256.vim'
 Plug 'catppuccin/vim', { 'as': 'catppuccin' }
 Plug 'vim-scripts/twilight256.vim'
+Plug 'rose-pine/vim', { 'as': 'rosepine' }
 
 
 Plug 'itchyny/lightline.vim'
@@ -62,13 +63,14 @@ let g:lightline = {
     \ 'component_function': {
     \   'gitbranch': 'FugitiveHead'
     \ },
-    \ 'colorscheme': 'gruvbox'
+    \ 'colorscheme': 'rosepine_moon'
     \ }
 
 set bg=dark
-let g:gruvbox_sign_column = 'dark0_hard'
-let g:gruvbox_contrast_dark = 'hard'
+"let g:gruvbox_sign_column = 'dark0_hard'
 
-colorscheme gruvbox
+"let g:gruvbox_contrast_dark = 'hard'
+
+colorscheme rosepine_moon
 
 
