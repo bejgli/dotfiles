@@ -22,7 +22,7 @@ set shiftwidth=4
 set softtabstop=4 
 set expandtab
 
-set termguicolors "catppuccin needs this
+set termguicolors
 
 call plug#begin()
 
@@ -36,9 +36,10 @@ Plug 'preservim/vim-indent-guides'
 
 "Plug 'elixir-editors/vim-elixir'
 
-"Plug 'morhetz/gruvbox'
+Plug 'morhetz/gruvbox'
 Plug 'junegunn/seoul256.vim'
 Plug 'catppuccin/vim', { 'as': 'catppuccin' }
+Plug 'vim-scripts/twilight256.vim'
 
 
 Plug 'itchyny/lightline.vim'
@@ -61,12 +62,12 @@ let g:lightline = {
     \ 'component_function': {
     \   'gitbranch': 'FugitiveHead'
     \ },
-    \ 'colorscheme': 'catppuccin_frappe'
+    \ 'colorscheme': 'gruvbox'
     \ }
 
-colorscheme catppuccin_mocha
-"colorscheme seoul256
-"colorscheme gruvbox
-"set bg=dark
+set bg=dark
+let g:gruvbox_contrast_dark = 'hard'
+
+colorscheme gruvbox
 
 
