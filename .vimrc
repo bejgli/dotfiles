@@ -66,6 +66,7 @@ let g:lightline = {
     \ }
 
 set bg=dark
+let g:gruvbox_sign_column = 'dark0_hard'
 let g:gruvbox_contrast_dark = 'hard'
 
 colorscheme gruvbox
