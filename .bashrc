@@ -33,7 +33,9 @@ unset rc
 #export PICO_EXTRAS_PATH=/home/lacustl/Pico/pico-extras
 
 # Elixir iex history
-export ERL_AFLAGS="-kernel shell_history enabled"
+#export ERL_AFLAGS="-kernel shell_history enabled"
 export GPG_TTY=$(tty)
 
 eval "$(starship init bash)"
+
+eval "$(fzf --bash)"
