@@ -63,7 +63,7 @@ let g:lightline = {
     \ 'component_function': {
     \   'gitbranch': 'FugitiveHead'
     \ },
-    \ 'colorscheme': 'rosepine_moon'
+    \ 'colorscheme': 'rosepine'
     \ }
 
 set bg=dark
@@ -71,6 +71,6 @@ set bg=dark
 
 "let g:gruvbox_contrast_dark = 'hard'
 
-colorscheme rosepine_moon
+colorscheme rosepine
 
 
