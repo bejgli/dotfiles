@@ -1,8 +1,13 @@
 theme = "onedark"
 
 [editor]
+cursorline = true
+true-color = true
 line-number = "relative"
 mouse = false
+
+[editor.file-picker]
+hidden = false
 
 [editor.cursor-shape]
 insert = "bar"
@@ -38,4 +43,12 @@ T = "goto_next_test"
 p = "goto_next_paragraph"
 space = "add_newline_below"
 
+[editor.statusline]
+left = ["mode", "spinner", "register"]
+center = ["version-control", "file-name", "read-only-indicator", "file-modification-indicator"]
+right = ["diagnostics", "selections", "position", "position-percentage", "file-encoding", "file-line-ending", "file-type"]
+separator = "│"
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
 
