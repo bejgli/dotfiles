@@ -2,6 +2,7 @@ theme = "onedark"
 
 [editor]
 line-number = "relative"
+bufferline = "multiple"
 mouse = false
 
 [editor.cursor-shape]
@@ -9,6 +10,9 @@ insert = "bar"
 
 [editor.search]
 smart-case = false
+
+[keys.normal]
+esc = ["collapse_selection", "keep_primary_selection"]
 
 [keys.normal.'ő']
 d = "goto_prev_diag"
